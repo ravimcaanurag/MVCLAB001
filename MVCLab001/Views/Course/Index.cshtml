@@ -1,0 +1,16 @@
+﻿@model List<MVCLab001.Models.CourseMdl>
+
+<table>
+    <tr><th>CourseID</th><th>Name</th><th>Rating</th></tr>
+
+@foreach (var x in Model) {
+    
+<tr>
+    <td>@x.courseID</td>
+    <td>@x.cname</td>
+    <td>@x.Rating</td>
+</tr>
+
+
+}
+</table>
